@@ -10,7 +10,7 @@ class CustomRoute(admin.ModelAdmin):
     form = RouteAdminForm
     list_display = (
         "title",
-        "uploader",
+        "user_id",
         "level",
         "get_tags",
         "location",

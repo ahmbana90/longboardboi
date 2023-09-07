@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <p><b>Route title:</b> {{route.title}}</p>
+        <p><b>Route level:</b> {{route.level}}</p>
+        <p><b>Route tags:</b>
+            <ul>
+                {%for tag in route_tags%}
+                    <li>{{tag.tag}}</li>
+                {%endfor%}
+            </ul>
+        </p>
+        <p><b>Route location</b> {{route.location}}</p>
+        <p><b>Route uploader:</b> {{route.user_id__username}}</p>
+        <p><b>Rating average:</b> {{avg_rate}}</p>
+        <p><b>Route description</b> {{route.description}}</p>
+    </body>
+</html>

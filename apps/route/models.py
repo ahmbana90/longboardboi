@@ -7,7 +7,7 @@ class Route(CreatedModifiedAtDatetime):
     ('Intermediate', 'Intermediate'),
     ('Advanced', 'Advanced'),
     )
-    uploader = models.ForeignKey("user.User", null=True, on_delete=models.SET_NULL)
+    user_id = models.ForeignKey("user.User", null=True, on_delete=models.SET_NULL)
     title = models.CharField(max_length=50)
     description = models.TextField()
     location = models.CharField(max_length=50)
