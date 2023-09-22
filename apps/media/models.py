@@ -9,7 +9,7 @@ class ProfilePicture(CreatedModifiedAtDatetime):
         return f"Profile Picture for "
     
 class RoutePicture(CreatedModifiedAtDatetime):
-    route_id=models.ForeignKey("route.Route", on_delete=models.CASCADE)
+    route_id=models.IntegerField()
     pic=models.ImageField(upload_to=None, height_field=None, width_field=None, max_length=None)
     
 class RouteVideo(CreatedModifiedAtDatetime):
