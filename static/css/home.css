@@ -1,0 +1,41 @@
+/* Style for the menu-toolbar */
+.menu-toolbar {
+    background-color: #333; /* Background color for the menu toolbar */
+    color: #fff; /* Text color for menu items */
+    padding: 10px 0; /* Add some padding to top and bottom for spacing */
+    position: fixed; /* Fixed position to keep it at the top */
+    top: 0; /* Position at the top of the viewport */
+    left: 0; /* Align to the left edge of the viewport */
+    width: 100%; /* Take up the full width of the viewport */
+  }
+  
+  /* Style for the menu items */
+  .menu-toolbar ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    text-align: center; /* Center-align menu items */
+  }
+  
+  .menu-toolbar ul li {
+    display: inline-block; /* Display menu items horizontally */
+    margin-right: 20px; /* Add spacing between menu items */
+  }
+  
+  .menu-toolbar ul li:last-child {
+    margin-right: 0; /* Remove margin from the last menu item */
+  }
+  
+  /* Style for menu item links */
+  .menu-toolbar ul li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #fff; /* Text color for menu item links */
+    font-weight: bold; /* Make the text bold */
+    font-size: 16px; /* Adjust the font size */
+    padding: 10px 20px; /* Add padding to menu items for clickable area */
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+  }
+  
+  .menu-toolbar ul li a:hover {
+    background-color: #555; /* Background color on hover */
+  }
+  

@@ -19,6 +19,7 @@ CUSTOM_APPS = [
     "apps.rating",
     "apps.route",
     "apps.inheritme",
+    "apps.home",
 ]
 
 THIRD_PARTY_APPS = []
